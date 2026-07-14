@@ -7,8 +7,9 @@ export const companyInfo = {
   address: '4/180 Đại lộ Bình Dương',
   email: 'maynenkhikingkong@gmail.com',
   social: {
-    zalo: 'https://zalo.me/0785338567',
+    zalo: 'https://zalo.me/84785338567',
     facebook: 'https://www.facebook.com/profile.php?id=61591555813597',
+    messenger: 'https://m.me/61591555813597',
     instagram: 'https://instagram.com/',
     wechat: '#', // TBD
   }

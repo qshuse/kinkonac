@@ -1,13 +1,25 @@
 {
   "Header": {
     "home": "首页",
-    "category": "产品分类",
+    "category": "产品类别",
     "about": "关于我们",
-    "products": "产品中心",
+    "products": "所有产品",
     "news": "新闻资讯",
     "contact": "联系我们",
     "getQuote": "获取报价",
     "searchPlaceholder": "搜索产品..."
+  },
+  "WechatModal": {
+    "title": "连接微信",
+    "description": "打开手机微信，扫描下方二维码添加好友。",
+    "errorMsg": "请将二维码上传至 public/wechat.jpg"
+  },
+  "OfferForm": {
+    "title": "注册获取 Kinkonac 优惠",
+    "successTitle": "注册成功！",
+    "successDesc": "系统已记录您的手机号码。我们将尽快与您联系。",
+    "placeholder": "例如：13812345678",
+    "submitBtn": "获取优惠"
   },
   "Hero": {
     "headline": "高端激光专用空压机",

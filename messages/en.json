@@ -6,8 +6,20 @@
     "products": "Products",
     "news": "News",
     "contact": "Contact",
-    "getQuote": "Get a Quote",
+    "getQuote": "Get Quote",
     "searchPlaceholder": "Search products..."
+  },
+  "WechatModal": {
+    "title": "Connect on WeChat",
+    "description": "Open WeChat on your phone and scan the QR code below to add us.",
+    "errorMsg": "Please add your QR code to public/wechat.jpg"
+  },
+  "OfferForm": {
+    "title": "Sign up for Kinkonac Offers",
+    "successTitle": "Registration Successful!",
+    "successDesc": "Your phone number has been recorded. We will contact you soon.",
+    "placeholder": "Example: +84989666888",
+    "submitBtn": "GET OFFER"
   },
   "Hero": {
     "headline": "Premium Laser Air Compressors",

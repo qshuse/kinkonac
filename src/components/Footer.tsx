@@ -1,11 +1,13 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { useState } from 'react';
 import { Link } from '@/i18n/navigation';
 import { companyInfo } from '@/data/company';
 
 export default function Footer() {
   const t = useTranslations('Footer');
+  const [showWechat, setShowWechat] = useState(false);
 
   return (
     <footer id="contact" className="bg-kinkonac-navy-dark text-white">
@@ -132,6 +134,13 @@ export default function Footer() {
               >
                 Zalo
               </a>
+              <button
+                onClick={() => setShowWechat(true)}
+                className="w-8 h-8 rounded-full bg-white/5 hover:bg-[#07C160] flex items-center justify-center text-white/70 hover:text-white transition-all font-bold text-[8px]"
+                title="WeChat"
+              >
+                WeChat
+              </button>
             </div>
 
           </div>
@@ -140,21 +149,14 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2 lg:col-span-4 rounded-2xl overflow-hidden h-64 lg:h-80 w-full border border-white/10 opacity-80 hover:opacity-100 transition-opacity mt-2 relative group">
             <iframe
               title="Google Maps Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250646.68136328636!2d106.5132226!3d11.1648348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d7a8d9a2632b%3A0x24249a022cc260b0!2zQsOsbmggRMawxqFuZywgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.4727409240375!2d106.69707257480735!3d10.927599589230554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d715d2a9042b%3A0xeefb55b38ed614d9!2sDiamond%20CNC!5e0!3m2!1sen!2s!4v1720849319808!5m2!1sen!2s"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen={false}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-            />
-            {/* Clickable overlay to open map in new tab instead of breaking the embed */}
-            <a 
-              href={`https://www.google.com/maps?q=${encodeURIComponent(companyInfo.address)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute inset-0 bg-kinkonac-navy/10 group-hover:bg-transparent transition-colors z-10"
-              aria-label="View on Google Maps"
+              className="grayscale hover:grayscale-0 transition-all duration-700"
             />
           </div>
         </div>
@@ -173,6 +175,32 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+      {/* WeChat QR Modal */}
+      {showWechat && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 animate-fade-in" onClick={() => setShowWechat(false)}>
+          <div className="bg-white p-8 rounded-3xl shadow-2xl max-w-sm w-full text-center relative animate-slide-up text-slate-800" onClick={(e) => e.stopPropagation()}>
+            <button 
+              onClick={() => setShowWechat(false)}
+              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-full p-2 transition-colors"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
+            <div className="w-16 h-16 bg-[#07C160] text-white rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <span className="font-bold text-xl">WeChat</span>
+            </div>
+            <h3 className="text-xl font-bold mb-2">{useTranslations('WechatModal')('title')}</h3>
+            <p className="text-slate-500 text-sm mb-6">{useTranslations('WechatModal')('description')}</p>
+            <div className="border-4 border-dashed border-gray-200 rounded-2xl p-4 mb-4 flex items-center justify-center aspect-square">
+              <img src="/wechat.jpg" alt="WeChat QR Code" className="w-full h-full object-contain rounded-xl" onError={(e) => {
+                e.currentTarget.style.display = 'none';
+                e.currentTarget.parentElement!.innerHTML = `<span class="text-gray-400 text-sm font-medium">${useTranslations('WechatModal')('errorMsg')}</span>`;
+              }}/>
+            </div>
+            <p className="text-sm font-semibold text-[#07C160]">Kinkonac CNC</p>
+          </div>
+        </div>
+      )}
     </footer>
   );
 }

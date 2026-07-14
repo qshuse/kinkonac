@@ -13,9 +13,12 @@ interface ProductDetailsProps {
 
 export default function ProductDetails({ product }: ProductDetailsProps) {
   const t = useTranslations('Products');
+  const tOffer = useTranslations('OfferForm');
   const locale = useLocale() as Locale;
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [isZoomed, setIsZoomed] = useState(false);
+  const [phone, setPhone] = useState('');
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const modelName = product.modelName[locale];
   const subCategory = product.subCategory[locale];
@@ -45,7 +48,7 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
                     </svg>
                   </div>
                 </div>
-                
+
                 {/* Thumbnails */}
                 {product.images.length > 1 && (
                   <div className="flex flex-wrap gap-4 justify-center mt-8">
@@ -53,11 +56,10 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
                       <button
                         key={index}
                         onClick={() => setActiveImageIndex(index)}
-                        className={`w-20 h-20 bg-white rounded-xl overflow-hidden border-2 transition-all shadow-sm ${
-                          activeImageIndex === index 
-                            ? 'border-kinkonac-orange scale-105 opacity-100' 
-                            : 'border-transparent hover:border-gray-300 opacity-60 hover:opacity-100'
-                        }`}
+                        className={`w-20 h-20 bg-white rounded-xl overflow-hidden border-2 transition-all shadow-sm ${activeImageIndex === index
+                          ? 'border-kinkonac-orange scale-105 opacity-100'
+                          : 'border-transparent hover:border-gray-300 opacity-60 hover:opacity-100'
+                          }`}
                       >
                         <img src={img} alt={`${modelName} ${index + 1}`} className="w-full h-full object-contain p-2" />
                       </button>
@@ -72,7 +74,7 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
                 </svg>
               </div>
             )}
-            
+
             {/* Category Badge */}
             <div className="absolute top-8 left-8">
               <span className="inline-flex items-center px-4 py-1.5 text-sm font-bold bg-kinkonac-navy text-white rounded-full shadow-md">
@@ -86,7 +88,7 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-kinkonac-navy mb-4 tracking-tight">
               {modelName}
             </h1>
-            
+
             <div className="w-16 h-1.5 bg-gradient-to-r from-kinkonac-orange to-kinkonac-orange-light rounded-full mb-8" />
 
             {/* Features */}
@@ -158,6 +160,60 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
                 {companyInfo.phones[0]}
               </a>
             </div>
+
+            {/* Offer Registration Form */}
+            <div className="mt-8 p-6 sm:p-8 bg-[#e2e8f0]/60 rounded-xl border border-gray-200/60 text-center">
+              <h4 className="text-lg sm:text-xl font-bold text-text-slate mb-5">
+                {tOffer('title')}
+              </h4>
+              {isSubmitted ? (
+                <div className="py-4 px-6 bg-green-50 rounded-xl border border-green-200 text-green-700 flex flex-col items-center gap-2 animate-fade-in">
+                  <svg className="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <p className="font-bold">{tOffer('successTitle')}</p>
+                  <p className="text-sm text-center">{tOffer('successDesc')}</p>
+                </div>
+              ) : (
+                <form className="flex flex-col sm:flex-row gap-3" onSubmit={(e) => {
+                  e.preventDefault();
+                  if (phone.trim()) {
+                    setIsSubmitted(true);
+                    
+                    // Gửi dữ liệu tới Google Sheets thông qua Google Apps Script URL
+                    // Bạn cần thay thế đường link trong fetch() bằng Web App URL của bạn
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbx5lnyopDPPnPm-qQvwAHa6dr09xurnA_Bu9Np1DfsB-0kFAkjK4skYQqL_hl2J7Dg7/exec';
+
+                    const formData = new FormData();
+                    formData.append('phone', phone);
+                    formData.append('product', modelName);
+                    formData.append('time', new Date().toLocaleString('vi-VN'));
+
+                    fetch(scriptURL, { method: 'POST', body: formData, mode: 'no-cors' })
+                      .then(() => {
+                        console.log('Đã lưu vào Google Sheets');
+                        setTimeout(() => setIsSubmitted(false), 5000);
+                      })
+                      .catch(error => console.error('Lỗi khi lưu:', error.message));
+                  }
+                }}>
+                  <input
+                    type="tel"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    placeholder={tOffer('placeholder')}
+                    className="flex-1 px-5 py-3.5 rounded-full border border-transparent focus:outline-none focus:border-kinkonac-navy focus:ring-2 focus:ring-kinkonac-navy/20 shadow-sm transition-all text-center sm:text-left"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    className="px-8 py-3.5 bg-kinkonac-navy text-white font-bold rounded-full hover:bg-kinkonac-navy-light transition-colors shadow-md whitespace-nowrap"
+                  >
+                    {tOffer('submitBtn')}
+                  </button>
+                </form>
+              )}
+            </div>
           </div>
         </div>
       </div>
@@ -171,7 +227,7 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
             </h2>
             <div className="h-1 flex-1 bg-gradient-to-r from-gray-200 to-transparent ml-8 rounded-full" />
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 xl:gap-8">
             {relatedProducts.map((p, index) => (
               <ProductCard key={p.id} product={p} index={index} />
@@ -182,11 +238,11 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
 
       {/* Fullscreen Image Zoom Modal */}
       {isZoomed && product.images?.[activeImageIndex] && (
-        <div 
+        <div
           className="fixed inset-0 z-[100] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 sm:p-8 animate-fade-in"
           onClick={() => setIsZoomed(false)}
         >
-          <button 
+          <button
             className="absolute top-6 right-6 w-12 h-12 bg-white/10 hover:bg-white/20 text-white rounded-full flex items-center justify-center transition-colors"
             onClick={() => setIsZoomed(false)}
           >
@@ -194,7 +250,7 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
-          
+
           <img
             src={product.images[activeImageIndex]}
             alt={modelName}

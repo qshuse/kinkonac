@@ -9,6 +9,18 @@
     "getQuote": "Nhận báo giá",
     "searchPlaceholder": "Tìm kiếm sản phẩm..."
   },
+  "WechatModal": {
+    "title": "Kết nối WeChat",
+    "description": "Mở ứng dụng WeChat trên điện thoại của bạn và quét mã QR bên dưới để kết bạn.",
+    "errorMsg": "Vui lòng tải ảnh QR vào public/wechat.jpg"
+  },
+  "OfferForm": {
+    "title": "Đăng ký nhận ưu đãi từ Kinkonac",
+    "successTitle": "Đăng ký thành công!",
+    "successDesc": "Hệ thống đã ghi nhận SĐT. Chúng tôi sẽ liên hệ lại với bạn sớm nhất.",
+    "placeholder": "Ví dụ: 0989666888",
+    "submitBtn": "NHẬN ƯU ĐÃI"
+  },
   "Hero": {
     "headline": "Máy Nén Khí Laser Chuyên Dụng Cao Cấp",
     "subtitle": "Giải pháp khí nén công nghiệp hàng đầu cho máy cắt laser – Hiệu suất vượt trội, bền bỉ và tiết kiệm năng lượng.",
