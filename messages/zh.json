@@ -5,9 +5,26 @@
     "about": "关于我们",
     "products": "所有产品",
     "news": "新闻资讯",
+    "careers": "招贤纳士",
     "contact": "联系我们",
     "getQuote": "获取报价",
     "searchPlaceholder": "搜索产品..."
+  },
+  "Careers": {
+    "title": "职业机会",
+    "subtitle": "加入金刚CNC团队，与我们共同成长",
+    "viewDetails": "查看详情",
+    "department": "部门",
+    "location": "地点",
+    "type": "类型",
+    "salary": "薪资",
+    "datePosted": "发布日期",
+    "description": "职位描述",
+    "requirements": "任职要求",
+    "benefits": "福利待遇",
+    "applyNow": "立即申请",
+    "backToList": "返回列表",
+    "relatedJobs": "其他职位"
   },
   "WechatModal": {
     "title": "连接微信",

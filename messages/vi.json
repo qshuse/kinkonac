@@ -5,9 +5,26 @@
     "about": "Giới thiệu",
     "products": "Sản phẩm",
     "news": "Tin tức",
+    "careers": "Tuyển dụng",
     "contact": "Liên hệ",
     "getQuote": "Nhận báo giá",
     "searchPlaceholder": "Tìm kiếm sản phẩm..."
+  },
+  "Careers": {
+    "title": "Cơ hội nghề nghiệp",
+    "subtitle": "Gia nhập đội ngũ KINKONAC để cùng phát triển",
+    "viewDetails": "Xem chi tiết",
+    "department": "Phòng ban",
+    "location": "Địa điểm",
+    "type": "Hình thức",
+    "salary": "Mức lương",
+    "datePosted": "Ngày đăng",
+    "description": "Mô tả công việc",
+    "requirements": "Yêu cầu công việc",
+    "benefits": "Quyền lợi",
+    "applyNow": "Ứng tuyển ngay",
+    "backToList": "Quay lại danh sách",
+    "relatedJobs": "Các vị trí khác"
   },
   "WechatModal": {
     "title": "Kết nối WeChat",

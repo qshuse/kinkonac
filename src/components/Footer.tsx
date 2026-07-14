@@ -149,7 +149,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2 lg:col-span-4 rounded-2xl overflow-hidden h-64 lg:h-80 w-full border border-white/10 opacity-80 hover:opacity-100 transition-opacity mt-2 relative group">
             <iframe
               title="Google Maps Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.4727409240375!2d106.69707257480735!3d10.927599589230554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d715d2a9042b%3A0xeefb55b38ed614d9!2sDiamond%20CNC!5e0!3m2!1sen!2s!4v1720849319808!5m2!1sen!2s"
+              src={`https://maps.google.com/maps?q=${encodeURIComponent(companyInfo.address)}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
               width="100%"
               height="100%"
               style={{ border: 0 }}

@@ -56,3 +56,17 @@ export interface NewsArticle {
   views: number;
   readTime: number;
 }
+
+export interface Job {
+  id: string;
+  slug: string;
+  title: LocalizedString;
+  department: LocalizedString;
+  location: LocalizedString;
+  type: LocalizedString;
+  salary: LocalizedString;
+  description: LocalizedString;
+  requirements: LocalizedStringArray;
+  benefits: LocalizedStringArray;
+  datePosted: string;
+}

@@ -4,7 +4,7 @@ export const companyInfo = {
   nameZH: '金刚CNC科技有限公司',
   establishedYear: 2015,
   phones: ['0785338567'],
-  address: '4/180 Đại lộ Bình Dương',
+  address: '4/78A, Đại lộ Bình Dương Đường Thuận, Thuận Giao, Hồ Chí Minh, Việt Nam',
   email: 'maynenkhikingkong@gmail.com',
   social: {
     zalo: 'https://zalo.me/84785338567',

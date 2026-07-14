@@ -30,6 +30,7 @@ export default function Header() {
     { key: 'category', href: '/products' },
     { key: 'products', href: '/products' },
     { key: 'news', href: '/news' },
+    { key: 'careers', href: '/careers' },
     { key: 'contact', href: '#contact' },
   ] as const;
 

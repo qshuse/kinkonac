@@ -5,9 +5,26 @@
     "about": "About Us",
     "products": "Products",
     "news": "News",
+    "careers": "Careers",
     "contact": "Contact",
     "getQuote": "Get Quote",
     "searchPlaceholder": "Search products..."
+  },
+  "Careers": {
+    "title": "Career Opportunities",
+    "subtitle": "Join the KINKONAC team and grow with us",
+    "viewDetails": "View Details",
+    "department": "Department",
+    "location": "Location",
+    "type": "Type",
+    "salary": "Salary",
+    "datePosted": "Date Posted",
+    "description": "Job Description",
+    "requirements": "Requirements",
+    "benefits": "Benefits",
+    "applyNow": "Apply Now",
+    "backToList": "Back to List",
+    "relatedJobs": "Other Openings"
   },
   "WechatModal": {
     "title": "Connect on WeChat",
