@@ -34,7 +34,7 @@ export const products: Product[] = [
         '高压水枪直接清洗散热器',
       ],
     },
-    images: ['/hero.jpg', '/logo.jpg'],
+    images: ['/demo.jpg'],
     specs: {
       power_KW: 15,
       volumeFlow_m3_min: 1.3,
@@ -78,7 +78,7 @@ export const products: Product[] = [
         '自动清洗散热器防止过热停机',
       ],
     },
-    images: ['/hero.jpg', '/logo.jpg'],
+    images: ['/demo.jpg'],
     specs: {
       power_KW: 22,
       volumeFlow_m3_min: 2.3,
@@ -119,7 +119,7 @@ export const products: Product[] = [
         '高压水枪直接维护散热器',
       ],
     },
-    images: ['/hero.jpg', '/logo.jpg'],
+    images: ['/demo.jpg'],
     specs: {
       power_KW: 37,
       volumeFlow_m3_min: 3.8,
@@ -158,7 +158,7 @@ export const products: Product[] = [
         '集成不锈铝芯，确保无铁颗粒',
       ],
     },
-    images: ['/hero.jpg', '/logo.jpg'],
+    images: ['/demo.jpg'],
     specs: {
       refrigerant: 'R-134',
       voltage: '220V/50HZ',
@@ -193,7 +193,7 @@ export const products: Product[] = [
         '与空气干燥机配合使用，达到五级过滤效果',
       ],
     },
-    images: ['/hero.jpg', '/logo.jpg'],
+    images: ['/demo.jpg'],
     specs: {
       processingVolume: 2.5,
       pipeDiameter: 'R c 1',
@@ -206,6 +206,7 @@ export const products: Product[] = [
     modelName: { vi: 'Máy sấy khí tác nhân lạnh KK-50', en: 'Refrigerated Dryer KK-50', zh: '冷冻式干燥机 KK-50' },
     subCategory: { vi: 'Máy sấy khí tác nhân lạnh', en: 'Refrigerated Dryer', zh: '冷冻式干燥机' },
     features: { vi: ['Tiết kiệm điện'], en: ['Energy saving'], zh: ['节能'] },
+    images: ['/demo.jpg'],
     specs: { power_KW: 5 },
   },
   {
@@ -214,6 +215,7 @@ export const products: Product[] = [
     modelName: { vi: 'Máy sấy khí hấp thụ KK-100', en: 'Desiccant Dryer KK-100', zh: '吸附式干燥机 KK-100' },
     subCategory: { vi: 'Máy sấy khí hấp thụ', en: 'Desiccant Dryer', zh: '吸附式干燥机' },
     features: { vi: ['Làm khô sâu'], en: ['Deep drying'], zh: ['深度干燥'] },
+    images: ['/demo.jpg'],
     specs: { power_KW: 10 },
   },
   {
@@ -222,6 +224,7 @@ export const products: Product[] = [
     modelName: { vi: 'Bình tích khí áp suất cao 1000L', en: 'High Pressure Air Tank 1000L', zh: '高压储气罐 1000L' },
     subCategory: { vi: 'Bình tích khí thép carbon', en: 'Carbon Steel Air Tank', zh: '碳钢储气罐' },
     features: { vi: ['Chịu áp cao', 'Sơn tĩnh điện'], en: ['High pressure resistant', 'Powder coated'], zh: ['耐高压', '粉末喷涂'] },
+    images: ['/demo.jpg'],
     specs: { tankVolume_m3: 1.0 },
   },
   {
@@ -230,6 +233,7 @@ export const products: Product[] = [
     modelName: { vi: 'Bình tích khí inox 500L', en: 'Stainless Steel Air Tank 500L', zh: '不锈钢储气罐 500L' },
     subCategory: { vi: 'Bình tích khí thép không gỉ', en: 'Stainless Steel Air Tank', zh: '不锈钢储气罐' },
     features: { vi: ['Chống ăn mòn', 'Chuẩn y tế'], en: ['Corrosion resistant', 'Medical grade'], zh: ['耐腐蚀', '医疗级'] },
+    images: ['/demo.jpg'],
     specs: { tankVolume_m3: 0.5 },
   },
   {
@@ -238,6 +242,7 @@ export const products: Product[] = [
     modelName: { vi: 'Lọc tinh đường ống 0.01 micron', en: 'Precision Inline Filter 0.01 micron', zh: '精密管道过滤器 0.01微米' },
     subCategory: { vi: 'Bộ lọc tinh', en: 'Precision Filter', zh: '精密过滤器' },
     features: { vi: ['Lọc sạch 99.9%'], en: ['99.9% filtration'], zh: ['99.9% 过滤'] },
+    images: ['/demo.jpg'],
     specs: { processingVolume: 3.0 },
   },
   {
@@ -246,6 +251,7 @@ export const products: Product[] = [
     modelName: { vi: 'Dầu tổng hợp gốc PAO 8000h', en: 'PAO Synthetic Oil 8000h', zh: 'PAO全合成油 8000h' },
     subCategory: { vi: 'Dầu tổng hợp', en: 'Synthetic Oil', zh: '全合成油' },
     features: { vi: ['Tuổi thọ 8000 giờ', 'Làm mát tốt'], en: ['8000 hours life', 'Good cooling'], zh: ['8000小时寿命', '良好的冷却'] },
+    images: ['/demo.jpg'],
     specs: { weight_KG: 18 },
   },
   {
@@ -254,6 +260,7 @@ export const products: Product[] = [
     modelName: { vi: 'Lọc tách dầu KK-SEP-01', en: 'Oil Separator KK-SEP-01', zh: '油气分离器 KK-SEP-01' },
     subCategory: { vi: 'Lọc tách dầu', en: 'Oil Separator', zh: '油气分离器' },
     features: { vi: ['Độ sụt áp thấp'], en: ['Low pressure drop'], zh: ['低压降'] },
+    images: ['/demo.jpg'],
     specs: { weight_KG: 2.5 },
   },
   {
@@ -262,6 +269,7 @@ export const products: Product[] = [
     modelName: { vi: 'Lọc gió KK-AIR-02', en: 'Air Filter Element KK-AIR-02', zh: '空气滤芯 KK-AIR-02' },
     subCategory: { vi: 'Lọc gió', en: 'Air Filter Element', zh: '空气滤芯' },
     features: { vi: ['Giữ bụi hiệu quả'], en: ['High dust capacity'], zh: ['高容尘量'] },
+    images: ['/demo.jpg'],
     specs: { weight_KG: 1.0 },
   },
 ];
