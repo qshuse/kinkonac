@@ -1,0 +1,267 @@
+import type { Product } from './types';
+
+export const products: Product[] = [
+  {
+    id: 'AC-15KW-INT',
+    categoryId: 'CAT-AIR-COMPRESSOR',
+    modelName: {
+      vi: 'Máy nén khí tích hợp chuyên dụng cho máy laser (15KW)',
+      en: 'Integrated Air Compressor for Laser Machine (15KW)',
+      zh: '激光专用一体式空压机 (15KW)',
+    },
+    subCategory: {
+      vi: 'Máy nén khí tích hợp',
+      en: 'Integrated Compressor',
+      zh: '一体式空压机',
+    },
+    features: {
+      vi: [
+        'Tự động làm sạch tản nhiệt khi nhiệt độ đạt 90°C',
+        'Bảo vệ thấu kính laser với đèn hiển thị 3 màu',
+        'Tách dầu nước hiệu quả với bình chứa 2 lớp chống cháy nổ',
+        'Súng nước cao áp xịt rửa trực tiếp bộ tản nhiệt',
+      ],
+      en: [
+        'Auto-cleaning radiator when temperature reaches 90°C',
+        'Laser lens protection with 3-color indicator light',
+        'High-efficiency oil/water separation with dual-layer explosion-proof tank',
+        'High-pressure water gun for direct radiator cleaning',
+      ],
+      zh: [
+        '温度达90°C时自动清洗散热器',
+        '三色指示灯保护激光镜片',
+        '双层防爆罐高效油水分离',
+        '高压水枪直接清洗散热器',
+      ],
+    },
+    images: ['/hero.jpg', '/logo.jpg'],
+    specs: {
+      power_KW: 15,
+      volumeFlow_m3_min: 1.3,
+      exhaustPressure_MPA: 1.58,
+      voltage: '380V/3PH/50HZ',
+      speed_RPM: 3600,
+      netWeight_KG: 386,
+      dimensions_MM: '1910 x 810 x 1690',
+    },
+  },
+  {
+    id: 'AC-22KW-SKID-1',
+    categoryId: 'CAT-AIR-COMPRESSOR',
+    modelName: {
+      vi: 'Máy nén khí laser chuyên dụng dạng skid 1 bình (22KW)',
+      en: 'Skid-mounted Air Compressor with 1 Tank (22KW)',
+      zh: '撬装单罐激光专用空压机 (22KW)',
+    },
+    subCategory: {
+      vi: 'Máy nén khí dạng Skid',
+      en: 'Skid-mounted Compressor',
+      zh: '撬装空压机',
+    },
+    features: {
+      vi: [
+        'Thiết kế nhỏ gọn, tiết kiệm 50% không gian lắp đặt',
+        '3 van xả tự động thương hiệu Jorc/Qiaoke',
+        'Cảnh báo thông minh 3 màu (Xanh, Vàng, Đỏ)',
+        'Tự động làm sạch tản nhiệt tránh dừng máy do nhiệt độ cao',
+      ],
+      en: [
+        'Compact design, saving 50% installation space',
+        '3 Jorc/Qiaoke brand automatic drain valves',
+        '3-color smart warning system (Green, Yellow, Red)',
+        'Auto-cleaning radiator prevents overheating shutdown',
+      ],
+      zh: [
+        '设计紧凑，节省50%安装空间',
+        '3个Jorc/Qiaoke品牌自动排水阀',
+        '三色智能预警系统（绿、黄、红）',
+        '自动清洗散热器防止过热停机',
+      ],
+    },
+    images: ['/hero.jpg', '/logo.jpg'],
+    specs: {
+      power_KW: 22,
+      volumeFlow_m3_min: 2.3,
+      exhaustPressure_MPA: 1.58,
+      voltage: '380V/3PH/50HZ',
+      speed_RPM: 3600,
+      netWeight_KG: 670,
+      dimensions_MM: '1550 x 2400 x 2420',
+    },
+  },
+  {
+    id: 'AC-37KW-SKID-2',
+    categoryId: 'CAT-AIR-COMPRESSOR',
+    modelName: {
+      vi: 'Máy nén khí chuyên dụng cho máy laser 2 bình tích hợp dạng skid (37KW)',
+      en: 'Skid-mounted Air Compressor with 2 Tanks for Laser (37KW)',
+      zh: '撬装双罐激光专用空压机 (37KW)',
+    },
+    subCategory: {
+      vi: 'Máy nén khí dạng Skid',
+      en: 'Skid-mounted Compressor',
+      zh: '撬装空压机',
+    },
+    features: {
+      vi: [
+        'Hệ thống lọc chính xác 5 cấp, lọc nhiều lớp giúp khí tinh khiết',
+        'Bình chứa khí kép chống cháy nổ, phân khoang xử lý nước và khí khô',
+        'Súng phun nước cao áp xịt rửa tản nhiệt trực tiếp',
+      ],
+      en: [
+        '5-stage precision filtration system for ultra-pure air',
+        'Dual explosion-proof tanks with separate water/dry air compartments',
+        'High-pressure water spray gun for direct radiator maintenance',
+      ],
+      zh: [
+        '五级精密过滤系统，确保超纯空气',
+        '双防爆罐，分隔水处理和干燥空气',
+        '高压水枪直接维护散热器',
+      ],
+    },
+    images: ['/hero.jpg', '/logo.jpg'],
+    specs: {
+      power_KW: 37,
+      volumeFlow_m3_min: 3.8,
+      exhaustPressure_MPA: 1.58,
+      voltage: '380V/3PH/50HZ',
+      speed_RPM: 3600,
+      netWeight_KG: 1110,
+      dimensions_MM: '1620 x 2900 x 2500',
+      tankVolume_m3: 1.2,
+    },
+  },
+  {
+    id: 'DRY-VF015',
+    categoryId: 'CAT-ACCESSORY',
+    modelName: {
+      vi: 'Máy sấy khí đông lạnh VF-015',
+      en: 'Refrigerated Air Dryer VF-015',
+      zh: '冷冻式干燥机 VF-015',
+    },
+    subCategory: {
+      vi: 'Máy sấy khí dạng đông lạnh',
+      en: 'Refrigerated Dryer',
+      zh: '冷冻式干燥机',
+    },
+    features: {
+      vi: [
+        'Máy sấy khí chuyên dụng, điểm sương thấp',
+        'Ruột tích hợp thùng nhôm không gỉ, đảm bảo khí không chứa phân tử sắt',
+      ],
+      en: [
+        'Specialized air dryer with low dew point',
+        'Integrated stainless aluminum core, ensuring iron-particle-free air',
+      ],
+      zh: [
+        '专用空气干燥机，低露点',
+        '集成不锈铝芯，确保无铁颗粒',
+      ],
+    },
+    images: ['/hero.jpg', '/logo.jpg'],
+    specs: {
+      refrigerant: 'R-134',
+      voltage: '220V/50HZ',
+      weight_KG: 50,
+      dimensions_MM: '500 x 300 x 500',
+    },
+  },
+  {
+    id: 'FIL-YF015',
+    categoryId: 'CAT-ACCESSORY',
+    modelName: {
+      vi: 'Máy lọc chính xác cao bằng thép không gỉ YF-015',
+      en: 'High-precision Stainless Steel Filter YF-015',
+      zh: '不锈钢高精度过滤器 YF-015',
+    },
+    subCategory: {
+      vi: 'Máy lọc chuyên sâu inox',
+      en: 'Stainless Steel Precision Filter',
+      zh: '不锈钢精密过滤器',
+    },
+    features: {
+      vi: [
+        'Chất liệu thép không gỉ bền bỉ, làm sạch bụi cứng đầu trong không khí',
+        'Kết hợp tốt với máy sấy khí để đạt hiệu quả lọc cấp 5',
+      ],
+      en: [
+        'Durable stainless steel construction for stubborn particulate removal',
+        'Optimal performance when paired with air dryer for 5-stage filtration',
+      ],
+      zh: [
+        '耐用不锈钢结构，去除顽固颗粒',
+        '与空气干燥机配合使用，达到五级过滤效果',
+      ],
+    },
+    images: ['/hero.jpg', '/logo.jpg'],
+    specs: {
+      processingVolume: 2.5,
+      pipeDiameter: 'R c 1',
+      weight_KG: 1.8,
+    },
+  },
+  {
+    id: 'MOCK-DRYER-1',
+    categoryId: 'CAT-AIR-DRYER',
+    modelName: { vi: 'Máy sấy khí tác nhân lạnh KK-50', en: 'Refrigerated Dryer KK-50', zh: '冷冻式干燥机 KK-50' },
+    subCategory: { vi: 'Máy sấy khí tác nhân lạnh', en: 'Refrigerated Dryer', zh: '冷冻式干燥机' },
+    features: { vi: ['Tiết kiệm điện'], en: ['Energy saving'], zh: ['节能'] },
+    specs: { power_KW: 5 },
+  },
+  {
+    id: 'MOCK-DRYER-2',
+    categoryId: 'CAT-AIR-DRYER',
+    modelName: { vi: 'Máy sấy khí hấp thụ KK-100', en: 'Desiccant Dryer KK-100', zh: '吸附式干燥机 KK-100' },
+    subCategory: { vi: 'Máy sấy khí hấp thụ', en: 'Desiccant Dryer', zh: '吸附式干燥机' },
+    features: { vi: ['Làm khô sâu'], en: ['Deep drying'], zh: ['深度干燥'] },
+    specs: { power_KW: 10 },
+  },
+  {
+    id: 'MOCK-TANK-1',
+    categoryId: 'CAT-AIR-TANK',
+    modelName: { vi: 'Bình tích khí áp suất cao 1000L', en: 'High Pressure Air Tank 1000L', zh: '高压储气罐 1000L' },
+    subCategory: { vi: 'Bình tích khí thép carbon', en: 'Carbon Steel Air Tank', zh: '碳钢储气罐' },
+    features: { vi: ['Chịu áp cao', 'Sơn tĩnh điện'], en: ['High pressure resistant', 'Powder coated'], zh: ['耐高压', '粉末喷涂'] },
+    specs: { tankVolume_m3: 1.0 },
+  },
+  {
+    id: 'MOCK-TANK-2',
+    categoryId: 'CAT-AIR-TANK',
+    modelName: { vi: 'Bình tích khí inox 500L', en: 'Stainless Steel Air Tank 500L', zh: '不锈钢储气罐 500L' },
+    subCategory: { vi: 'Bình tích khí thép không gỉ', en: 'Stainless Steel Air Tank', zh: '不锈钢储气罐' },
+    features: { vi: ['Chống ăn mòn', 'Chuẩn y tế'], en: ['Corrosion resistant', 'Medical grade'], zh: ['耐腐蚀', '医疗级'] },
+    specs: { tankVolume_m3: 0.5 },
+  },
+  {
+    id: 'MOCK-FILTER-1',
+    categoryId: 'CAT-AIR-FILTER',
+    modelName: { vi: 'Lọc tinh đường ống 0.01 micron', en: 'Precision Inline Filter 0.01 micron', zh: '精密管道过滤器 0.01微米' },
+    subCategory: { vi: 'Bộ lọc tinh', en: 'Precision Filter', zh: '精密过滤器' },
+    features: { vi: ['Lọc sạch 99.9%'], en: ['99.9% filtration'], zh: ['99.9% 过滤'] },
+    specs: { processingVolume: 3.0 },
+  },
+  {
+    id: 'MOCK-OIL-1',
+    categoryId: 'CAT-COMPRESSOR-OIL',
+    modelName: { vi: 'Dầu tổng hợp gốc PAO 8000h', en: 'PAO Synthetic Oil 8000h', zh: 'PAO全合成油 8000h' },
+    subCategory: { vi: 'Dầu tổng hợp', en: 'Synthetic Oil', zh: '全合成油' },
+    features: { vi: ['Tuổi thọ 8000 giờ', 'Làm mát tốt'], en: ['8000 hours life', 'Good cooling'], zh: ['8000小时寿命', '良好的冷却'] },
+    specs: { weight_KG: 18 },
+  },
+  {
+    id: 'MOCK-PARTS-1',
+    categoryId: 'CAT-SPARE-PARTS',
+    modelName: { vi: 'Lọc tách dầu KK-SEP-01', en: 'Oil Separator KK-SEP-01', zh: '油气分离器 KK-SEP-01' },
+    subCategory: { vi: 'Lọc tách dầu', en: 'Oil Separator', zh: '油气分离器' },
+    features: { vi: ['Độ sụt áp thấp'], en: ['Low pressure drop'], zh: ['低压降'] },
+    specs: { weight_KG: 2.5 },
+  },
+  {
+    id: 'MOCK-PARTS-2',
+    categoryId: 'CAT-SPARE-PARTS',
+    modelName: { vi: 'Lọc gió KK-AIR-02', en: 'Air Filter Element KK-AIR-02', zh: '空气滤芯 KK-AIR-02' },
+    subCategory: { vi: 'Lọc gió', en: 'Air Filter Element', zh: '空气滤芯' },
+    features: { vi: ['Giữ bụi hiệu quả'], en: ['High dust capacity'], zh: ['高容尘量'] },
+    specs: { weight_KG: 1.0 },
+  },
+];
