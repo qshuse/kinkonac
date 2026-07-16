@@ -1,13 +1,17 @@
 import { notFound } from 'next/navigation';
 import { products } from '@/data/products';
+import { routing } from '@/i18n/routing';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ProductDetails from '@/components/ProductDetails';
 
 export function generateStaticParams() {
-  return products.map((product) => ({
-    id: product.id,
-  }));
+  return routing.locales.flatMap((locale) =>
+    products.map((product) => ({
+      locale,
+      id: product.id,
+    }))
+  );
 }
 
 export default async function ProductPage({ params }: { params: Promise<{ locale: string; id: string }> }) {

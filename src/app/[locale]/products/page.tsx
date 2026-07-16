@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ProductCatalog from '@/components/ProductCatalog';
@@ -9,7 +10,9 @@ export default function ProductsPage() {
       <Header />
       <main className="flex-1">
         <ProductsHero />
-        <ProductCatalog />
+        <Suspense fallback={<div className="py-12 text-center text-text-slate-light">Loading catalog...</div>}>
+          <ProductCatalog />
+        </Suspense>
       </main>
       <Footer />
     </div>

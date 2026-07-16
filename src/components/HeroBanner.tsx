@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { companyInfo } from '@/data/company';
 
 export default function HeroBanner() {
@@ -70,15 +71,15 @@ export default function HeroBanner() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-start gap-4 animate-slide-up" style={{ animationDelay: '0.4s' }}>
-              <a
-                href="#products"
+              <Link
+                href="/products"
                 className="inline-flex items-center gap-2.5 px-8 py-4 bg-gradient-to-r from-kinkonac-orange to-kinkonac-orange-light text-white font-bold text-base rounded-xl hover:from-kinkonac-orange-dark hover:to-kinkonac-orange shadow-lg hover:shadow-xl transform hover:scale-[1.03] transition-all duration-300"
               >
                 {t('cta')}
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </a>
+              </Link>
               <a
                 href={companyInfo.social.zalo}
                 target="_blank"

@@ -2,9 +2,19 @@ import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { jobListings } from '@/data/careers';
+import { routing } from '@/i18n/routing';
 import type { Locale } from '@/data/types';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+
+export function generateStaticParams() {
+  return routing.locales.flatMap((locale) =>
+    jobListings.map((job) => ({
+      locale,
+      id: job.id,
+    }))
+  );
+}
 
 export default async function JobDetailsPage({ params }: { params: Promise<{ id: string, locale: string }> }) {
   const resolvedParams = await params;

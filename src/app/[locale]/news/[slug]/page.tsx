@@ -2,9 +2,18 @@ import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { newsArticles } from '@/data/news';
+import { routing } from '@/i18n/routing';
 import { Link } from '@/i18n/navigation';
-import { useLocale } from 'next-intl';
 import type { Locale } from '@/data/types';
+
+export function generateStaticParams() {
+  return routing.locales.flatMap((locale) =>
+    newsArticles.map((article) => ({
+      locale,
+      slug: article.slug,
+    }))
+  );
+}
 
 export default async function NewsDetailPage({ params }: { params: Promise<{ slug: string, locale: string }> }) {
   const resolvedParams = await params;
