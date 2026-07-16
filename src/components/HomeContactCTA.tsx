@@ -40,7 +40,7 @@ export default function HomeContactCTA() {
             className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-bold text-lg rounded-xl hover:bg-white/20 shadow-lg transform hover:-translate-y-1 transition-all duration-300"
           >
             <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M21.544 10.518c0-4.636-4.5-8.518-10.272-8.518S1 5.882 1 10.518c0 4.14 3.597 7.6 8.5 8.358v3.524l3.522-1.921c.214.041.433.078.65.111 5.485-.398 9.872-4.225 9.872-8.871zm-13.62 1.94a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v3.5h2.5a.5.5 0 0 1 0 1h-3zM15 12h-2v-.5a1.5 1.5 0 0 1 1.5-1.5h.5a.5.5 0 0 0 0-1h-1.5a.5.5 0 0 1 0-1h1.5a1.5 1.5 0 0 1 1.5 1.5v.5a1.5 1.5 0 0 1-1.5 1.5H14v.5h1a.5.5 0 0 1 0 1z"/>
+              <path d="M12 2C6.48 2 2 6.03 2 11c0 2.27 1.05 4.33 2.78 5.86L3.1 21.2a.5.5 0 00.7.6l4.63-2.31A10.74 10.74 0 0012 20c5.52 0 10-4.03 10-9s-4.48-9-10-9zm2.5 11.5h-4.3c-.4 0-.7-.3-.7-.7v-.2c0-.3.2-.5.5-.7l3.3-3.6H9.7c-.4 0-.7-.3-.7-.7v-.2c0-.4.3-.7.7-.7h4.3c.4 0 .7.3.7.7v.2c0 .3-.2.5-.5.7l-3.3 3.6h3.6c.4 0 .7.3.7.7v.2c0 .4-.3.7-.7.7z" />
             </svg>
             {t('chatZalo')}
           </a>

@@ -32,7 +32,7 @@ export const jobListings: Job[] = [
     description: {
       vi: 'Tìm kiếm và phát triển mạng lưới khách hàng doanh nghiệp trong ngành cơ khí, gia công laser. Tư vấn các giải pháp máy nén khí phù hợp với nhu cầu của khách hàng.',
       en: 'Search and develop a network of corporate clients in the mechanical and laser processing industry. Advise on air compressor solutions suitable for customer needs.',
-      zh: '在机械和激光加工行业寻找和开发企业客户网络。提供适合客户需求的空压机解决方案咨询。'
+      zh: '负责机械及激光加工行业的企业客户开发与维护，深入了解客户工况需求，提供专业的空压机选型方案与技术咨询服务。'
     },
     requirements: {
       vi: [
@@ -48,10 +48,10 @@ export const jobListings: Job[] = [
         'Willing to travel on business trips when required.'
       ],
       zh: [
-        '大专/本科毕业，工商管理、机械、电气或相关专业。',
-        '至少1年B2B销售经验，有工业机械行业经验者优先。',
-        '良好的沟通、谈判和说服能力。',
-        '愿意根据要求出差。'
+        '大专及以上学历，工商管理、机械工程、电气自动化等相关专业优先。',
+        '具备1年以上B2B销售经验，有工业设备行业背景者优先考虑。',
+        '具备较强的沟通表达、商务谈判与客户关系维护能力。',
+        '能适应短期出差，具备良好的抗压能力与团队协作精神。'
       ]
     },
     benefits: {
@@ -70,11 +70,11 @@ export const jobListings: Job[] = [
         'Full social insurance and health insurance according to the law.'
       ],
       zh: [
-        '底薪 + 丰厚提成（上不封顶）。',
-        '节假日奖金、第13个月工资。',
-        '深入的产品技术和销售技巧培训。',
-        '年轻充满活力的工作环境，有晋升机会。',
-        '按法律规定缴纳社会保险和医疗保险。'
+        '底薪 + 丰厚业务提成（上不封顶）。',
+        '享有节假日奖金及年终十三薪。',
+        '入职即享系统化的产品技术培训及销售技能提升课程。',
+        '扁平化管理，晋升通道清晰，优秀者可快速成长为区域负责人。',
+        '依法缴纳五险，享受带薪年假等法定福利。'
       ]
     },
     datePosted: '2024-05-15'
@@ -110,7 +110,7 @@ export const jobListings: Job[] = [
     description: {
       vi: 'Thực hiện lắp đặt, bảo hành, bảo trì, và sửa chữa hệ thống máy nén khí tại nhà máy của khách hàng. Hỗ trợ giải đáp các thắc mắc kỹ thuật cho khách hàng.',
       en: 'Perform installation, warranty, maintenance, and repair of air compressor systems at customers factories. Support in answering technical queries for customers.',
-      zh: '在客户工厂执行空压机系统的安装、保修、维护和维修。支持解答客户的技术问题。'
+      zh: '负责空压机系统的现场安装、调试、定期保养及故障排查，驻场或上门为客户提供专业售后技术支持。'
     },
     requirements: {
       vi: [
@@ -126,10 +126,10 @@ export const jobListings: Job[] = [
         'Good health, honest, careful and responsible at work.'
       ],
       zh: [
-        '中专/大专毕业，机电一体化、工业电气或机械专业。',
-        '有空压机系统维护经验者优先。',
-        '能阅读并理解基本技术文档。',
-        '身体健康、诚实、仔细，对工作有责任心。'
+        '中专及以上学历，机电一体化、电气自动化、机械制造等相关专业。',
+        '有压缩空气系统维保经验者优先录用。',
+        '能看懂基本电气原理图及设备技术手册。',
+        '身体素质良好，工作踏实认真，具备高度责任心。'
       ]
     },
     benefits: {
@@ -146,10 +146,10 @@ export const jobListings: Job[] = [
         'Full social insurance and health insurance.'
       ],
       zh: [
-        '基本工资 + 交通补贴、差旅费。',
-        'KPI和绩效奖金。',
-        '派往制造商生产工厂接受培训。',
-        '缴纳社会保险和医疗保险。'
+        '基本工资 + 交通补贴 + 出差补助。',
+        'KPI达标奖金及年度绩效奖励。',
+        '定期安排赴厂家总部接受专业技术培训。',
+        '依法缴纳五险，享受法定节假日及带薪年假。'
       ]
     },
     datePosted: '2024-05-10'

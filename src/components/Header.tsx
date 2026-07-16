@@ -36,43 +36,64 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-nav">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-10">
         <div className="flex items-center justify-between h-16 lg:h-18">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            {/* Image Logo */}
-            <div className="relative flex items-center justify-center overflow-hidden h-16 lg:h-18 w-48 sm:w-64 -ml-2">
-              <img
-                src="/logo.jpg"
-                alt="KINKONAC Logo"
-                className="w-full h-full object-contain scale-[1.8] sm:scale-[2] mix-blend-darken transition-transform duration-300 hover:scale-[1.85] sm:hover:scale-[2.05]"
-                onError={(e) => {
-                  // Fallback if image not found yet
-                  e.currentTarget.style.display = 'none';
-                  e.currentTarget.nextElementSibling?.classList.remove('hidden');
-                }}
-              />
-              {/* Fallback Text Logo */}
-              <div className="hidden flex items-center gap-3">
-                <span className="text-xl lg:text-2xl font-extrabold tracking-tight text-kinkonac-navy">
-                  KINKO<span className="text-kinkonac-orange">NAC</span>
-                </span>
-                <p className="text-[10px] font-medium text-text-slate-light tracking-widest uppercase hidden sm:block">
-                  Air Compressors
-                </p>
+          {/* Left Side: Hotline & Logo */}
+          <div className="flex items-center gap-2 sm:gap-4">
+            {/* Direct Phone Link */}
+            <a
+              href={`tel:${companyInfo.phones[0]}`}
+              className="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-full bg-kinkonac-orange/10 hover:bg-kinkonac-orange/20 text-kinkonac-orange-dark hover:text-kinkonac-orange transition-all duration-200 border border-kinkonac-orange/20 shadow-sm shrink-0"
+              title="Hotline"
+            >
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
+              </span>
+              <svg className="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-1C9.716 18 2 10.284 2 3z" />
+              </svg>
+              <span className="text-xs sm:text-sm font-bold whitespace-nowrap hidden min-[360px]:inline">
+                {companyInfo.phones[0].replace(/(\d{4})(\d{3})(\d{3})/, '$1.$2.$3')}
+              </span>
+            </a>
+
+            {/* Logo */}
+            <Link href="/" className="flex items-center gap-3 group">
+              {/* Image Logo */}
+              <div className="relative flex items-center justify-center overflow-hidden h-16 lg:h-18 w-36 sm:w-52 -ml-2">
+                <img
+                  src="/logo.png"
+                  alt="KINKONAC Logo"
+                  className="w-full h-full object-contain scale-[1.7] sm:scale-[1.9] mix-blend-darken transition-transform duration-300 hover:scale-[1.75] sm:hover:scale-[1.95]"
+                  onError={(e) => {
+                    // Fallback if image not found yet
+                    e.currentTarget.style.display = 'none';
+                    e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                  }}
+                />
+                {/* Fallback Text Logo */}
+                <div className="hidden flex items-center gap-3">
+                  <span className="text-xl lg:text-2xl font-extrabold tracking-tight text-kinkonac-navy">
+                    KINKO<span className="text-kinkonac-orange">NAC</span>
+                  </span>
+                  <p className="text-[10px] font-medium text-text-slate-light tracking-widest uppercase hidden sm:block">
+                    Air Compressors
+                  </p>
+                </div>
               </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className="hidden md:flex items-center gap-1.5 lg:gap-2.5 xl:gap-4">
             {navLinks.map((link) => {
               if (link.key === 'category') {
                 return (
                   <div key={link.key} className="relative group py-2">
                     <Link
                       href={link.href}
-                      className="inline-flex items-center gap-1 px-3 xl:px-4 py-2 text-sm font-medium text-text-slate-light hover:text-kinkonac-navy rounded-lg hover:bg-kinkonac-navy/5 transition-all duration-200 whitespace-nowrap"
+                      className="inline-flex items-center gap-1 px-3 xl:px-4 py-2 text-[15px] lg:text-[16px] xl:text-[17px] font-bold text-slate-800 hover:text-kinkonac-orange rounded-lg hover:bg-kinkonac-navy/5 transition-all duration-200 whitespace-nowrap"
                     >
                       {t(link.key)}
                       <svg className="w-4 h-4 text-gray-400 group-hover:text-kinkonac-orange transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -86,7 +107,7 @@ export default function Header() {
                           <Link
                             key={category.id}
                             href={`/products?category=${category.id}`}
-                            className="block px-5 py-3 text-sm font-medium text-text-slate hover:bg-kinkonac-navy/5 hover:text-kinkonac-orange transition-colors"
+                            className="block px-5 py-3 text-[15px] font-bold text-slate-800 hover:bg-kinkonac-navy/5 hover:text-kinkonac-orange transition-colors"
                           >
                             {category.name[locale as Locale]}
                           </Link>
@@ -103,7 +124,7 @@ export default function Header() {
                   <a
                     key={link.key}
                     href={link.href}
-                    className="px-3 xl:px-4 py-2 text-sm font-medium text-text-slate-light hover:text-kinkonac-navy rounded-lg hover:bg-kinkonac-navy/5 transition-all duration-200 whitespace-nowrap"
+                    className="px-3 xl:px-4 py-2 text-[15px] lg:text-[16px] xl:text-[17px] font-bold text-slate-800 hover:text-kinkonac-orange rounded-lg hover:bg-kinkonac-navy/5 transition-all duration-200 whitespace-nowrap"
                   >
                     {t(link.key)}
                   </a>
@@ -113,7 +134,7 @@ export default function Header() {
                 <Link
                   key={link.key}
                   href={link.href}
-                  className="px-3 xl:px-4 py-2 text-sm font-medium text-text-slate-light hover:text-kinkonac-navy rounded-lg hover:bg-kinkonac-navy/5 transition-all duration-200 whitespace-nowrap"
+                  className="px-3 xl:px-4 py-2 text-[15px] lg:text-[16px] xl:text-[17px] font-bold text-slate-800 hover:text-kinkonac-orange rounded-lg hover:bg-kinkonac-navy/5 transition-all duration-200 whitespace-nowrap"
                 >
                   {t(link.key)}
                 </Link>
@@ -131,7 +152,7 @@ export default function Header() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder={t('searchPlaceholder')}
-                  className="pl-9 pr-4 py-1.5 bg-gray-50 border border-gray-200 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-kinkonac-navy/20 focus:border-kinkonac-navy transition-all w-48 xl:w-64"
+                  className="pl-9 pr-4 py-1.5 bg-gray-50 border border-gray-200 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-kinkonac-navy/20 focus:border-kinkonac-navy transition-all w-40 xl:w-56"
                 />
                 <svg className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />

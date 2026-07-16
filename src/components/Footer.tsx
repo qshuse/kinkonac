@@ -7,6 +7,7 @@ import { companyInfo } from '@/data/company';
 
 export default function Footer() {
   const t = useTranslations('Footer');
+  const tWechat = useTranslations('WechatModal');
   const [showWechat, setShowWechat] = useState(false);
 
   return (
@@ -135,6 +136,7 @@ export default function Footer() {
                 Zalo
               </a>
               <button
+                type="button"
                 onClick={() => setShowWechat(true)}
                 className="w-8 h-8 rounded-full bg-white/5 hover:bg-[#07C160] flex items-center justify-center text-white/70 hover:text-white transition-all font-bold text-[8px]"
                 title="WeChat"
@@ -180,7 +182,8 @@ export default function Footer() {
       {showWechat && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 animate-fade-in" onClick={() => setShowWechat(false)}>
           <div className="bg-white p-8 rounded-3xl shadow-2xl max-w-sm w-full text-center relative animate-slide-up text-slate-800" onClick={(e) => e.stopPropagation()}>
-            <button 
+            <button
+              type="button"
               onClick={() => setShowWechat(false)}
               className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-full p-2 transition-colors"
             >
@@ -189,13 +192,13 @@ export default function Footer() {
             <div className="w-16 h-16 bg-[#07C160] text-white rounded-2xl flex items-center justify-center mx-auto mb-4">
               <span className="font-bold text-xl">WeChat</span>
             </div>
-            <h3 className="text-xl font-bold mb-2">{useTranslations('WechatModal')('title')}</h3>
-            <p className="text-slate-500 text-sm mb-6">{useTranslations('WechatModal')('description')}</p>
+            <h3 className="text-xl font-bold mb-2">{tWechat('title')}</h3>
+            <p className="text-slate-500 text-sm mb-6">{tWechat('description')}</p>
             <div className="border-4 border-dashed border-gray-200 rounded-2xl p-4 mb-4 flex items-center justify-center aspect-square">
               <img src="/wechat.jpg" alt="WeChat QR Code" className="w-full h-full object-contain rounded-xl" onError={(e) => {
                 e.currentTarget.style.display = 'none';
-                e.currentTarget.parentElement!.innerHTML = `<span class="text-gray-400 text-sm font-medium">${useTranslations('WechatModal')('errorMsg')}</span>`;
-              }}/>
+                e.currentTarget.parentElement!.innerHTML = `<span class="text-gray-400 text-sm font-medium">${tWechat('errorMsg')}</span>`;
+              }} />
             </div>
             <p className="text-sm font-semibold text-[#07C160]">Kinkonac CNC</p>
           </div>

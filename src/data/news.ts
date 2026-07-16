@@ -7,12 +7,12 @@ export const newsArticles: NewsArticle[] = [
     title: {
       vi: 'Giải Pháp Khí Nén Tối Ưu Cho Máy Cắt Laser Công Suất Lớn',
       en: 'Optimal Compressed Air Solutions for High-Power Laser Cutters',
-      zh: '高功率激光切割机的最佳压缩空气解决方案'
+      zh: '大功率激光切割机气源选型方案深度解析'
     },
     summary: {
       vi: 'Khám phá cách lựa chọn máy nén khí phù hợp giúp tăng 30% hiệu suất cắt laser và giảm tiêu thụ điện năng hiệu quả.',
       en: 'Discover how choosing the right air compressor can increase laser cutting efficiency by 30% and reduce power consumption.',
-      zh: '了解如何选择合适的空压机，将激光切割效率提高 30% 并降低功耗。'
+      zh: '选对空压机，激光切割效率提升30%、电费显著下降——实操选型思路分享。'
     },
     content: {
       vi: `
@@ -32,18 +32,18 @@ In the metal fabrication industry, laser cutting machines require not only power
 Investing in a specialized compressed air system is not a cost, but a profitable investment by protecting expensive equipment and optimizing operational costs.
       `,
       zh: `
-在金属加工行业，激光切割机不仅需要强大的压缩空气，还需要高纯度的压缩空气。本文详细分析：
-1. **理想压力：** 为什么1.6 Mpa是切割碳钢的黄金标准。
-2. **空气处理：** 冷冻式干燥机和4级过滤器在防止激光镜片污染方面的作用。
-3. **节能：** 永磁变频技术助力降低高达40%的能耗。
+在金属加工领域，激光切割机对压缩空气的要求极为严苛——不仅要压力充足，更要洁净度达标。本文从实际应用出发，为您深度解析：
+1. **气源压力选型：** 切割碳钢时，为何 1.6 MPa 是行业公认的黄金参数？
+2. **后处理配套：** 冷干机 + 四级精密过滤如何有效杜绝镜片污染，延长光学元件寿命？
+3. **能耗优化：** 永磁变频技术实测可降低能耗高达 40%，投资回报期大幅缩短。
 
-投资专业的压缩空气系统不是一种成本，而是一种有利可图的投资，它可以保护昂贵的设备并优化运营成本。
+配置一套专业的气源系统，表面看是投入，实际上是在保护价值数百万的激光设备、降低长期运营成本——这笔账，算得过来。
       `
     },
     category: {
       vi: 'Giải pháp Công nghệ',
       en: 'Technology Solutions',
-      zh: '技术方案'
+      zh: '技术干货'
     },
     categorySlug: 'tech-solutions',
     author: 'KINKONAC Tech Team',
@@ -57,12 +57,12 @@ Investing in a specialized compressed air system is not a cost, but a profitable
     title: {
       vi: 'Hướng Dẫn Bảo Trì Máy Nén Khí Định Kỳ Dành Cho Nhà Máy',
       en: 'Periodic Maintenance Guide for Factory Air Compressors',
-      zh: '工厂空压机定期维护指南'
+      zh: '工厂空压机定期保养实操手册'
     },
     summary: {
       vi: 'Quy trình bảo dưỡng chuẩn 5 bước giúp kéo dài tuổi thọ máy nén khí trục vít và hạn chế tối đa thời gian downtime.',
       en: 'A standard 5-step maintenance process that helps extend the lifespan of screw air compressors and minimizes downtime.',
-      zh: '标准的5步维护流程，有助于延长螺杆空压机的使用寿命并最大程度地减少停机时间。'
+      zh: '5步标准保养流程，有效延长螺杆空压机使用寿命、大幅减少非计划停机。'
     },
     content: {
       vi: `
@@ -86,20 +86,20 @@ Routine maintenance is key to keeping your compressed air system running smoothl
 Following this procedure will save your business thousands of dollars in unexpected repair costs.
       `,
       zh: `
-日常维护是保持压缩空气系统平稳运行的关键。以下是5个基本步骤：
-1. 定期检查和更换空压机油（每2000 - 4000小时，具体取决于类型）。
-2. 清洁或更换空气过滤器、机油过滤器和油气分离器。
-3. 检查皮带张力（适用于皮带驱动的机器）。
-4. 清洁散热片以确保冷却性能。
-5. 检查安全阀和控制系统。
+定期保养是气源系统稳定运行的基础。以下5个核心步骤，建议纳入您的设备管理规程：
+1. 按规定周期更换空压机专用油（一般每 2000 - 4000 小时，视机型而定）。
+2. 定期清洗或更换空滤、油滤及油气分离器芯。
+3. 皮带驱动机型需检查皮带张紧度，避免打滑磨损。
+4. 清理散热翅片积灰，确保冷却系统高效散热。
+5. 逐项检查安全阀与控制系统，排除潜在隐患。
 
-遵循此程序将为您的企业节省数千美元的意外维修费用。
+坚持执行以上流程，可有效避免突发故障带来的高额维修成本和产线停摆损失。
       `
     },
     category: {
       vi: 'Hướng dẫn sử dụng',
       en: 'User Guides',
-      zh: '用户指南'
+      zh: '维保指南'
     },
     categorySlug: 'user-guides',
     author: 'KINKONAC Support',
@@ -113,12 +113,12 @@ Following this procedure will save your business thousands of dollars in unexpec
     title: {
       vi: 'KINKONAC Ra Mắt Dòng Máy Nén Khí 4-in-1 Mới Nhất 2024',
       en: 'KINKONAC Launches the Latest 4-in-1 Air Compressor Series 2024',
-      zh: 'KINKONAC推出2024年最新款四合一空压机系列'
+      zh: 'KINKONAC 2024年全新四合一空压机系列正式发布'
     },
     summary: {
       vi: 'Dòng sản phẩm tích hợp Máy nén, Bình tích, Máy sấy và Bộ lọc trong cùng một thiết kế nhỏ gọn, tối ưu không gian nhà xưởng.',
       en: 'An integrated product line combining Compressor, Tank, Dryer, and Filters in a compact design, optimizing workshop space.',
-      zh: '一款集成了压缩机、储气罐、干燥机和过滤器的紧凑设计产品系列，优化车间空间。'
+      zh: '压缩机+储气罐+冷干机+精密过滤器四合一集成设计，占地面积大幅缩减，即装即用。'
     },
     content: {
       vi: `
@@ -142,20 +142,20 @@ To meet the growing needs of small and medium-sized machining workshops, KINKONA
 This product is expected to be a "Game Changer" in 2024 for CNC laser cutting customers.
       `,
       zh: `
-为满足中小型加工车间日益增长的需求，KINKONAC正式推出**All-in-One 4-in-1**系列。
+针对中小型加工车间对气源设备"占地小、上手快、气质好"的迫切需求，KINKONAC 正式推出 **All-in-One 四合一** 系列。
 
-**亮点：**
-- **节省空间：** 与独立系统相比，安装占地面积减少了50%。
-- **快速安装：** 简单的“即插即用”，无需复杂的管道连接。
-- **高空气质量：** 凭借高性能集成过滤器，达到工业级洁净空气标准。
+**核心亮点：**
+- **占地减半：** 相比传统分体式系统，安装面积缩小 50%，为产线腾出更多空间。
+- **即装即用：** 无需复杂的管路连接，通电通气即可投入生产。
+- **气质达标：** 内置高效精密过滤模块，出气品质直接满足工业级洁净标准。
 
-该产品预计将成为2024年数控激光切割客户的“游戏规则改变者”。
+这款产品将为 2024 年的数控激光切割用户带来全新的气源配置体验——更省心、更高效、更经济。
       `
     },
     category: {
       vi: 'Tin Tức Sản Phẩm',
       en: 'Product News',
-      zh: '产品新闻'
+      zh: '新品发布'
     },
     categorySlug: 'product-news',
     author: 'KINKONAC PR',
@@ -169,12 +169,12 @@ This product is expected to be a "Game Changer" in 2024 for CNC laser cutting cu
     title: {
       vi: 'Cách Chọn Mua Máy Sấy Khí Phù Hợp Cho Hệ Thống Khí Nén',
       en: 'How to Choose the Right Air Dryer for Your Compressed Air System',
-      zh: '如何为您的压缩空气系统选择合适的冷干机'
+      zh: '冷干机选型攻略：如何为您的气源系统匹配最合适的干燥设备'
     },
     summary: {
       vi: 'Phân biệt máy sấy lạnh và máy sấy hấp thụ. Lựa chọn nào mang lại hiệu quả kinh tế cao nhất cho doanh nghiệp của bạn?',
       en: 'Distinguish between refrigerated dryers and desiccant dryers. Which choice brings the highest economic efficiency to your business?',
-      zh: '区分冷冻式干燥机和吸附式干燥机。哪种选择能为您的企业带来最高的经济效益？'
+      zh: '冷冻式 vs 吸附式干燥机，哪种方案性价比更高？一文帮您理清选型思路。'
     },
     content: {
       vi: `
@@ -208,25 +208,25 @@ In most industrial applications, especially laser cutting, removing water vapor 
 If you do standard sheet metal laser cutting, a specialized refrigerated dryer from KINKONAC is the optimal choice for cost and efficiency.
       `,
       zh: `
-在大多数工业应用中，尤其是激光切割，从压缩空气中去除水蒸气是强制性的。主要有两种干燥技术：
+在绝大多数工业场景中，尤其是激光切割加工，压缩空气中的水分必须彻底去除，否则将直接影响切割质量和设备寿命。目前主流的两种干燥技术各有适用场景：
 
-**1. 冷冻式干燥机：**
-- 将空气冷却至约3°C以冷凝水蒸气。
-- 投资成本低，易于维护。
-- 适用于90%的一般工业应用。
+**1. 冷冻式干燥机（冷干机）：**
+- 将压缩空气冷却至约 3°C，使水蒸气凝结排出。
+- 设备投入低、日常维护简单，综合使用成本可控。
+- 能满足约 90% 常规工业工况的除水需求。
 
-**2. 吸附式干燥机：**
-- 使用干燥剂珠，露点可降至-40°C或更低。
-- 成本高，需要消耗一定的压缩空气进行再生。
-- 适用于需要超干燥空气的环境（医疗、电子、超精密激光切割）。
+**2. 吸附式干燥机（吸干机）：**
+- 采用吸附剂深度除水，出口露点可低至 -40°C 甚至更低。
+- 设备及运行成本较高，且再生过程会消耗一部分压缩空气。
+- 适用于对空气洁净度要求极高的特殊工况（医疗、精密电子、超精密激光加工等）。
 
-如果您进行标准的钣金激光切割，KINKONAC的专用冷冻式干燥机是成本和效率的最佳选择。
+如果您的主要应用是常规钣金激光切割，KINKONAC 专用冷干机是兼顾品质与成本的理想选择。
       `
     },
     category: {
       vi: 'Kiến Thức Ngành',
       en: 'Industry Knowledge',
-      zh: '行业知识'
+      zh: '选型指南'
     },
     categorySlug: 'industry-knowledge',
     author: 'KINKONAC Experts',
@@ -240,12 +240,12 @@ If you do standard sheet metal laser cutting, a specialized refrigerated dryer f
     title: {
       vi: 'KINKONAC Tham Gia Triển Lãm Quốc Tế Về Công Nghệ Laser 2024',
       en: 'KINKONAC Participates in the 2024 International Laser Technology Exhibition',
-      zh: 'KINKONAC参加2024年国际激光技术展览会'
+      zh: 'KINKONAC 亮相 2024 国际激光技术装备展'
     },
     summary: {
       vi: 'Cập nhật những hình ảnh và công nghệ khí nén đột phá mà KINKONAC đã trình diễn tại triển lãm công nghiệp quốc tế vừa qua.',
       en: 'Update on the images and breakthrough compressed air technologies that KINKONAC demonstrated at the recent international industrial exhibition.',
-      zh: '更新KINKONAC在最近的国际工业展览会上展示的照片和突破性的压缩空气技术。'
+      zh: '直击展会现场：KINKONAC 携旗下高压气源系统精彩亮相，获行业专家高度认可。'
     },
     content: {
       vi: `
@@ -263,17 +263,17 @@ We live-demonstrated a high-pressure air compressor system (1.6 Mpa) serving a 2
 This is a testament to KINKONAC's commitment to continuously improving product quality to best support manufacturing businesses in Vietnam.
       `,
       zh: `
-在2024年3月举行的国际金属加工技术及设备展览会上，KINKONAC展位吸引了超过5000名参观者。
+2024年3月，在国际金属加工技术装备展览会上，KINKONAC 展位累计接待超过 5000 名专业观众。
 
-我们现场演示了服务于20kW光纤激光切割机的高压空压机系统（1.6 Mpa）。提供稳定、无水、无油气流的能力受到了行业专家的高度评价。
+展会现场，我们实机演示了为 20kW 光纤激光切割机配套的 1.6 MPa 高压气源系统。设备出气稳定、无水无油的卓越表现，获得了众多行业专家和终端用户的一致好评。
 
-这证明了KINKONAC致力于不断提高产品质量，以最好地支持越南的制造企业。
+这也再次印证了 KINKONAC 始终坚持的产品理念：以过硬品质服务制造业客户，做激光行业最值得信赖的气源合作伙伴。
       `
     },
     category: {
       vi: 'Sự Kiện',
       en: 'Events',
-      zh: '活动'
+      zh: '展会动态'
     },
     categorySlug: 'events',
     author: 'KINKONAC PR',

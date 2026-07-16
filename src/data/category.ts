@@ -6,12 +6,12 @@ export const categories: Category[] = [
     name: {
       vi: 'Máy Nén Khí Chuyên Dụng',
       en: 'Specialized Air Compressors',
-      zh: '专用空压机',
+      zh: '激光专用空压机',
     },
     description: {
       vi: 'Các dòng máy nén khí trục vít làm mát bằng nước King Kong',
       en: 'King Kong water-cooled screw air compressor series',
-      zh: 'King Kong 水冷螺杆空压机系列',
+      zh: 'KINKONAC 水冷螺杆空压机全系列产品',
     },
   },
   {
@@ -19,12 +19,12 @@ export const categories: Category[] = [
     name: {
       vi: 'Thiết Bị Phụ Trợ & Phụ Tùng',
       en: 'Accessories & Spare Parts',
-      zh: '配件与备件',
+      zh: '配套设备与附件',
     },
     description: {
       vi: 'Các giải pháp xử lý khí nén đi kèm',
       en: 'Complementary compressed air treatment solutions',
-      zh: '配套压缩空气处理解决方案',
+      zh: '与空压机配套的气源后处理设备',
     },
   },
   {
@@ -37,7 +37,7 @@ export const categories: Category[] = [
     description: {
       vi: 'Máy sấy khí tác nhân lạnh giúp loại bỏ hơi ẩm',
       en: 'Refrigerated air dryers to remove moisture',
-      zh: '冷冻式干燥机去除水分',
+      zh: '冷冻式压缩空气干燥机，高效去除压缩空气中的水分',
     },
   },
   {
@@ -50,7 +50,7 @@ export const categories: Category[] = [
     description: {
       vi: 'Bình chứa khí nén áp lực cao an toàn và bền bỉ',
       en: 'Safe and durable high-pressure air receiver tanks',
-      zh: '安全耐用的高压储气罐',
+      zh: '安全耐用的高压储气罐，稳定供气的可靠保障',
     },
   },
   {
@@ -63,7 +63,7 @@ export const categories: Category[] = [
     description: {
       vi: 'Hệ thống lọc khí đa cấp độ cho độ tinh khiết cao',
       en: 'Multi-stage air filtration systems for high purity',
-      zh: '多级空气过滤系统，提供高纯度空气',
+      zh: '多级精密过滤系统，确保出气洁净度达标',
     },
   },
   {
@@ -76,7 +76,7 @@ export const categories: Category[] = [
     description: {
       vi: 'Dầu nhớt chuyên dụng giúp máy nén khí hoạt động trơn tru',
       en: 'Specialized lubricants for smooth compressor operation',
-      zh: '确保空压机平稳运行的专用润滑油',
+      zh: '空压机专用润滑油，有效降低磨损、延长设备使用寿命',
     },
   },
   {
@@ -84,12 +84,12 @@ export const categories: Category[] = [
     name: {
       vi: 'Phụ Tùng Thay Thế',
       en: 'Spare Parts',
-      zh: '备件',
+      zh: '原装备件',
     },
     description: {
       vi: 'Linh kiện và phụ tùng chính hãng King Kong',
       en: 'Genuine King Kong spare parts and components',
-      zh: '金刚原装正品备件及组件',
+      zh: 'KINKONAC 原装正品备件，品质与原机一致',
     },
   },
 ];
