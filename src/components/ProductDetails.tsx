@@ -18,6 +18,7 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [isZoomed, setIsZoomed] = useState(false);
   const [phone, setPhone] = useState('');
+  const [phoneError, setPhoneError] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const modelName = product.modelName[locale];
@@ -175,13 +176,29 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
                   <p className="text-sm text-center">{tOffer('successDesc')}</p>
                 </div>
               ) : (
-                <form className="flex flex-col sm:flex-row gap-3" onSubmit={(e) => {
-                  e.preventDefault();
-                  if (phone.trim()) {
+                <form
+                  className="flex flex-col gap-2"
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    const rawDigits = phone.replace(/\D/g, '');
+                    const cleanPhone = phone.trim().replace(/\s+/g, '');
+                    const isVnPhone = /^(0|\+?84)[35789][0-9]{8}$/.test(cleanPhone);
+                    const isGeneralPhone = rawDigits.length >= 9 && rawDigits.length <= 11;
+
+                    if (!phone.trim()) {
+                      setPhoneError(tOffer('requiredError'));
+                      return;
+                    }
+
+                    if (!isVnPhone && !isGeneralPhone) {
+                      setPhoneError(tOffer('invalidError'));
+                      return;
+                    }
+
+                    setPhoneError('');
                     setIsSubmitted(true);
-                    
+
                     // Gửi dữ liệu tới Google Sheets thông qua Google Apps Script URL
-                    // Bạn cần thay thế đường link trong fetch() bằng Web App URL của bạn
                     const scriptURL = 'https://script.google.com/macros/s/AKfycbx5lnyopDPPnPm-qQvwAHa6dr09xurnA_Bu9Np1DfsB-0kFAkjK4skYQqL_hl2J7Dg7/exec';
 
                     const formData = new FormData();
@@ -194,23 +211,41 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
                         console.log('Đã lưu vào Google Sheets');
                         setTimeout(() => setIsSubmitted(false), 5000);
                       })
-                      .catch(error => console.error('Lỗi khi lưu:', error.message));
-                  }
-                }}>
-                  <input
-                    type="tel"
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
-                    placeholder={tOffer('placeholder')}
-                    className="flex-1 px-5 py-3.5 rounded-full border border-transparent focus:outline-none focus:border-kinkonac-navy focus:ring-2 focus:ring-kinkonac-navy/20 shadow-sm transition-all text-center sm:text-left"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    className="px-8 py-3.5 bg-kinkonac-navy text-white font-bold rounded-full hover:bg-kinkonac-navy-light transition-colors shadow-md whitespace-nowrap"
-                  >
-                    {tOffer('submitBtn')}
-                  </button>
+                      .catch((error) => console.error('Lỗi khi lưu:', error.message));
+                  }}
+                >
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <div className="flex-1 relative">
+                      <input
+                        type="tel"
+                        value={phone}
+                        onChange={(e) => {
+                          // Tự động lọc bỏ các ký tự chữ cái / ký tự đặc biệt không hợp lệ
+                          const sanitized = e.target.value.replace(/[^\d\s\+\-\(\)]/g, '');
+                          setPhone(sanitized);
+                          if (phoneError) setPhoneError('');
+                        }}
+                        placeholder={tOffer('placeholder')}
+                        className={`w-full px-5 py-3.5 rounded-full border ${
+                          phoneError
+                            ? 'border-red-500 ring-2 ring-red-200 bg-red-50/50'
+                            : 'border-transparent focus:border-kinkonac-navy focus:ring-2 focus:ring-kinkonac-navy/20'
+                        } focus:outline-none shadow-sm transition-all text-center sm:text-left`}
+                        required
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      className="px-8 py-3.5 bg-kinkonac-navy text-white font-bold rounded-full hover:bg-kinkonac-navy-light transition-colors shadow-md whitespace-nowrap"
+                    >
+                      {tOffer('submitBtn')}
+                    </button>
+                  </div>
+                  {phoneError && (
+                    <p className="text-xs font-semibold text-red-500 text-center sm:text-left px-4 mt-1 animate-fade-in">
+                      ⚠️ {phoneError}
+                    </p>
+                  )}
                 </form>
               )}
             </div>

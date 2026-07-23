@@ -33,7 +33,7 @@ export default function FloatingContact() {
           title="Messenger"
         >
           <svg className="w-10 h-10 relative z-10" fill="currentColor" viewBox="0 0 256 256">
-            <path d="M128,24C68.4,24,20,68.6,20,123.6c0,31.4,15.7,59.3,40.1,77.7v35c0,4.8,5.4,7.6,9.3,4.9l36.5-24.9c7.1,1.9,14.5,2.9,22.1,2.9c59.6,0,108-44.6,108-99.6S187.6,24,128,24z M144.3,158.1l-24.6-26.3c-2.3-2.4-6.1-2.5-8.5-0.1l-36.2,33.9c-3.5,3.2-8.5-1.5-5.6-5.2l29.4-38.3c2.2-2.9,6-3.8,9.2-2.3l24.6,11.8c2.2,1,4.8,0.7,6.8-0.9l36.4-29.8c3.5-2.8,8.1,2,5.2,5.3L144.3,158.1z"/>
+            <path d="M128,24C68.4,24,20,68.6,20,123.6c0,31.4,15.7,59.3,40.1,77.7v35c0,4.8,5.4,7.6,9.3,4.9l36.5-24.9c7.1,1.9,14.5,2.9,22.1,2.9c59.6,0,108-44.6,108-99.6S187.6,24,128,24z M144.3,158.1l-24.6-26.3c-2.3-2.4-6.1-2.5-8.5-0.1l-36.2,33.9c-3.5,3.2-8.5-1.5-5.6-5.2l29.4-38.3c2.2-2.9,6-3.8,9.2-2.3l24.6,11.8c2.2,1,4.8,0.7,6.8-0.9l36.4-29.8c3.5-2.8,8.1,2,5.2,5.3L144.3,158.1z" />
           </svg>
         </a>
 
@@ -63,7 +63,7 @@ export default function FloatingContact() {
       {showWechat && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-fade-in" onClick={() => setShowWechat(false)}>
           <div className="bg-white p-8 rounded-3xl shadow-2xl max-w-sm w-full text-center relative animate-slide-up" onClick={(e) => e.stopPropagation()}>
-            <button 
+            <button
               onClick={() => setShowWechat(false)}
               className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-full p-2 transition-colors"
             >
@@ -79,7 +79,7 @@ export default function FloatingContact() {
               <img src="/wechat.jpg" alt="WeChat QR Code" className="w-full h-full object-contain rounded-xl" onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 e.currentTarget.parentElement!.innerHTML = `<span class="text-gray-400 text-sm font-medium">${t('errorMsg')}</span>`;
-              }}/>
+              }} />
             </div>
             <p className="text-sm font-semibold text-[#07C160]">Kinkonac CNC</p>
           </div>

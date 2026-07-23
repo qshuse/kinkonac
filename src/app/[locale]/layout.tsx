@@ -7,9 +7,9 @@ import FloatingContact from '@/components/FloatingContact';
 import "../globals.css";
 
 export const metadata: Metadata = {
-  title: "KINKONAC | Premium Laser Air Compressors",
-  description: "Industry-leading compressed air solutions for laser cutting machines. Specialized screw air compressors with superior performance and energy efficiency.",
-  keywords: "air compressor, laser compressor, KINKONAC, máy nén khí, 空压机, industrial compressor",
+  title: "KINKONAC | Premium Industrial Air Compressors",
+  description: "Industry-leading compressed air solutions for manufacturing and factories. Specialized screw air compressors with superior performance and energy efficiency.",
+  keywords: "air compressor, industrial compressor, KINKONAC, máy nén khí, 空压机",
 };
 
 export function generateStaticParams() {

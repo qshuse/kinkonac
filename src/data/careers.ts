@@ -30,9 +30,9 @@ export const jobListings: Job[] = [
       zh: '15,000,000 - 30,000,000 越南盾'
     },
     description: {
-      vi: 'Tìm kiếm và phát triển mạng lưới khách hàng doanh nghiệp trong ngành cơ khí, gia công laser. Tư vấn các giải pháp máy nén khí phù hợp với nhu cầu của khách hàng.',
-      en: 'Search and develop a network of corporate clients in the mechanical and laser processing industry. Advise on air compressor solutions suitable for customer needs.',
-      zh: '负责机械及激光加工行业的企业客户开发与维护，深入了解客户工况需求，提供专业的空压机选型方案与技术咨询服务。'
+      vi: 'Tìm kiếm và phát triển mạng lưới khách hàng doanh nghiệp trong ngành cơ khí, chế tạo. Tư vấn các giải pháp máy nén khí phù hợp với nhu cầu của khách hàng.',
+      en: 'Search and develop a network of corporate clients in the mechanical and manufacturing industry. Advise on air compressor solutions suitable for customer needs.',
+      zh: '负责机械及制造行业的企业客户开发与维护，深入了解客户工况需求，提供专业的空压机选型方案与技术咨询服务。'
     },
     requirements: {
       vi: [

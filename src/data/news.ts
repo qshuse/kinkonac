@@ -3,41 +3,41 @@ import type { NewsArticle } from './types';
 export const newsArticles: NewsArticle[] = [
   {
     id: 'news-1',
-    slug: 'giai-phap-khi-nen-cho-may-cat-laser',
+    slug: 'giai-phap-khi-nen-cho-nha-may-cong-nghiep',
     title: {
-      vi: 'Giải Pháp Khí Nén Tối Ưu Cho Máy Cắt Laser Công Suất Lớn',
-      en: 'Optimal Compressed Air Solutions for High-Power Laser Cutters',
-      zh: '大功率激光切割机气源选型方案深度解析'
+      vi: 'Giải Pháp Khí Nén Tối Ưu Cho Nhà Máy Công Nghiệp',
+      en: 'Optimal Compressed Air Solutions for Industrial Factories',
+      zh: '工业厂房气源选型方案深度解析'
     },
     summary: {
-      vi: 'Khám phá cách lựa chọn máy nén khí phù hợp giúp tăng 30% hiệu suất cắt laser và giảm tiêu thụ điện năng hiệu quả.',
-      en: 'Discover how choosing the right air compressor can increase laser cutting efficiency by 30% and reduce power consumption.',
-      zh: '选对空压机，激光切割效率提升30%、电费显著下降——实操选型思路分享。'
+      vi: 'Khám phá cách lựa chọn máy nén khí phù hợp giúp tăng 30% hiệu suất vận hành và giảm tiêu thụ điện năng hiệu quả.',
+      en: 'Discover how choosing the right air compressor can increase operational efficiency by 30% and reduce power consumption.',
+      zh: '选对空压机，运行效率提升30%、电费显著下降——实操选型思路分享。'
     },
     content: {
       vi: `
-Trong ngành gia công kim loại, máy cắt laser đòi hỏi nguồn khí nén không chỉ mạnh mẽ mà còn phải đạt độ tinh khiết cao. Bài viết này sẽ phân tích chi tiết:
-1. **Áp suất lý tưởng:** Tại sao mức áp 1.6 Mpa lại là tiêu chuẩn vàng cho cắt thép carbon.
-2. **Xử lý khí:** Vai trò của máy sấy lạnh và bộ lọc 4 cấp trong việc ngăn ngừa bám bẩn thấu kính laser.
+Trong ngành gia công cơ khí và chế tạo, nhà máy đòi hỏi nguồn khí nén không chỉ mạnh mẽ mà còn phải đạt độ tinh khiết cao. Bài viết này sẽ phân tích chi tiết:
+1. **Áp suất lý tưởng:** Tại sao áp suất ổn định lại là tiêu chuẩn vàng cho hệ thống nhà xưởng.
+2. **Xử lý khí:** Vai trò của máy sấy lạnh và bộ lọc 4 cấp trong việc bảo vệ máy móc thiết bị.
 3. **Tiết kiệm năng lượng:** Công nghệ biến tần từ tính vĩnh cửu giúp giảm đến 40% điện năng tiêu thụ.
 
-Đầu tư vào một hệ thống khí nén chuyên dụng không phải là chi phí, mà là khoản đầu tư sinh lời thông qua việc bảo vệ thiết bị đắt tiền và tối ưu chi phí vận hành.
+Đầu tư vào một hệ thống khí nén chuyên dụng không phải là chi phí, mà là khoản đầu tư sinh lời thông qua việc bảo vệ thiết bị và tối ưu chi phí vận hành.
       `,
       en: `
-In the metal fabrication industry, laser cutting machines require not only powerful but also highly pure compressed air. This article analyzes in detail:
-1. **Ideal Pressure:** Why 1.6 Mpa is the gold standard for cutting carbon steel.
-2. **Air Treatment:** The role of refrigerated dryers and 4-stage filters in preventing laser lens contamination.
+In the manufacturing industry, factories require not only powerful but also highly pure compressed air. This article analyzes in detail:
+1. **Ideal Pressure:** Why stable pressure is the gold standard for factory operations.
+2. **Air Treatment:** The role of refrigerated dryers and 4-stage filters in protecting industrial machinery.
 3. **Energy Savings:** Permanent magnet variable frequency technology helps reduce energy consumption by up to 40%.
 
-Investing in a specialized compressed air system is not a cost, but a profitable investment by protecting expensive equipment and optimizing operational costs.
+Investing in a specialized compressed air system is not a cost, but a profitable investment by protecting equipment and optimizing operational costs.
       `,
       zh: `
-在金属加工领域，激光切割机对压缩空气的要求极为严苛——不仅要压力充足，更要洁净度达标。本文从实际应用出发，为您深度解析：
-1. **气源压力选型：** 切割碳钢时，为何 1.6 MPa 是行业公认的黄金参数？
-2. **后处理配套：** 冷干机 + 四级精密过滤如何有效杜绝镜片污染，延长光学元件寿命？
+在工业制造领域，工厂对压缩空气的要求极为严苛——不仅要压力充足，更要洁净度达标。本文从实际应用出发，为您深度解析：
+1. **气源压力选型：** 为什么稳定的供气压力是工业生产的黄金参数？
+2. **后处理配套：** 冷干机 + 四级精密过滤如何有效保护生产设备，延长机械寿命？
 3. **能耗优化：** 永磁变频技术实测可降低能耗高达 40%，投资回报期大幅缩短。
 
-配置一套专业的气源系统，表面看是投入，实际上是在保护价值数百万的激光设备、降低长期运营成本——这笔账，算得过来。
+配置一套专业的气源系统，表面看是投入，实际上是在保护生产设备、降低长期运营成本——这笔账，算得过来。
       `
     },
     category: {
@@ -129,7 +129,7 @@ Nhằm đáp ứng nhu cầu ngày càng cao của các xưởng gia công quy m
 - **Lắp đặt nhanh chóng:** Dễ dàng "Cắm và Chạy" (Plug & Play) không cần đường ống kết nối phức tạp.
 - **Chất lượng khí cao:** Đạt tiêu chuẩn khí sạch cấp độ công nghiệp nhờ bộ lọc tích hợp hiệu suất cao.
 
-Sản phẩm này dự kiến sẽ là "Game Changer" trong năm 2024 cho các khách hàng cắt laser CNC.
+Sản phẩm này dự kiến sẽ là "Game Changer" trong năm 2024 cho các nhà xưởng sản xuất và gia công cơ khí.
       `,
       en: `
 To meet the growing needs of small and medium-sized machining workshops, KINKONAC officially introduces the **All-in-One 4-in-1** series.
@@ -139,7 +139,7 @@ To meet the growing needs of small and medium-sized machining workshops, KINKONA
 - **Quick installation:** Easy "Plug & Play" without complex piping connections.
 - **High air quality:** Achieves industrial-grade clean air standards thanks to high-performance integrated filters.
 
-This product is expected to be a "Game Changer" in 2024 for CNC laser cutting customers.
+This product is expected to be a "Game Changer" in 2024 for manufacturing workshop customers.
       `,
       zh: `
 针对中小型加工车间对气源设备"占地小、上手快、气质好"的迫切需求，KINKONAC 正式推出 **All-in-One 四合一** 系列。
@@ -149,7 +149,7 @@ This product is expected to be a "Game Changer" in 2024 for CNC laser cutting cu
 - **即装即用：** 无需复杂的管路连接，通电通气即可投入生产。
 - **气质达标：** 内置高效精密过滤模块，出气品质直接满足工业级洁净标准。
 
-这款产品将为 2024 年的数控激光切割用户带来全新的气源配置体验——更省心、更高效、更经济。
+这款产品将为 2024 年的制造业用户带来全新的气源配置体验——更省心、更高效、更经济。
       `
     },
     category: {
@@ -178,7 +178,7 @@ This product is expected to be a "Game Changer" in 2024 for CNC laser cutting cu
     },
     content: {
       vi: `
-Trong phần lớn các ứng dụng công nghiệp, đặc biệt là cắt laser, việc loại bỏ hơi nước khỏi khí nén là bắt buộc. Có hai công nghệ sấy chính:
+Trong phần lớn các ứng dụng công nghiệp, việc loại bỏ hơi nước khỏi khí nén là bắt buộc. Có hai công nghệ sấy chính:
 
 **1. Máy sấy lạnh (Refrigerated Dryer):**
 - Làm lạnh không khí xuống khoảng 3°C để hơi nước ngưng tụ.
@@ -188,12 +188,12 @@ Trong phần lớn các ứng dụng công nghiệp, đặc biệt là cắt las
 **2. Máy sấy hấp thụ (Desiccant Dryer):**
 - Sử dụng hạt hút ẩm, có thể đạt điểm sương tới -40°C hoặc thấp hơn.
 - Chi phí cao, hao hụt lượng khí nén nhất định để tái sinh hạt.
-- Dành cho môi trường yêu cầu khí siêu khô (y tế, điện tử, cắt laser siêu chính xác).
+- Dành cho môi trường yêu cầu khí siêu khô (y tế, điện tử, gia công chính xác).
 
-Nếu bạn cắt laser kim loại tấm thông thường, máy sấy lạnh chuyên dụng từ KINKONAC là lựa chọn tối ưu về chi phí và hiệu quả.
+Đối với các xưởng gia công thông thường, máy sấy lạnh chuyên dụng từ KINKONAC là lựa chọn tối ưu về chi phí và hiệu quả.
       `,
       en: `
-In most industrial applications, especially laser cutting, removing water vapor from compressed air is mandatory. There are two main drying technologies:
+In most industrial applications, removing water vapor from compressed air is mandatory. There are two main drying technologies:
 
 **1. Refrigerated Dryer:**
 - Cools the air to about 3°C to condense water vapor.
@@ -203,12 +203,12 @@ In most industrial applications, especially laser cutting, removing water vapor 
 **2. Desiccant Dryer:**
 - Uses desiccant beads, can achieve dew points down to -40°C or lower.
 - High cost, consumes some compressed air for regeneration.
-- For environments requiring ultra-dry air (medical, electronics, ultra-precision laser cutting).
+- For environments requiring ultra-dry air (medical, electronics, precision manufacturing).
 
-If you do standard sheet metal laser cutting, a specialized refrigerated dryer from KINKONAC is the optimal choice for cost and efficiency.
+For standard manufacturing workshops, a specialized refrigerated dryer from KINKONAC is the optimal choice for cost and efficiency.
       `,
       zh: `
-在绝大多数工业场景中，尤其是激光切割加工，压缩空气中的水分必须彻底去除，否则将直接影响切割质量和设备寿命。目前主流的两种干燥技术各有适用场景：
+在绝大多数工业场景中，压缩空气中的水分必须彻底去除，否则将直接影响生产质量和设备寿命。目前主流的两种干燥技术各有适用场景：
 
 **1. 冷冻式干燥机（冷干机）：**
 - 将压缩空气冷却至约 3°C，使水蒸气凝结排出。
@@ -218,9 +218,9 @@ If you do standard sheet metal laser cutting, a specialized refrigerated dryer f
 **2. 吸附式干燥机（吸干机）：**
 - 采用吸附剂深度除水，出口露点可低至 -40°C 甚至更低。
 - 设备及运行成本较高，且再生过程会消耗一部分压缩空气。
-- 适用于对空气洁净度要求极高的特殊工况（医疗、精密电子、超精密激光加工等）。
+- 适用于对空气洁净度要求极高的特殊工况（医疗、精密电子、高精度加工等）。
 
-如果您的主要应用是常规钣金激光切割，KINKONAC 专用冷干机是兼顾品质与成本的理想选择。
+如果您的主要应用是常规工业加工，KINKONAC 专用冷干机是兼顾品质与成本的理想选择。
       `
     },
     category: {
@@ -236,11 +236,11 @@ If you do standard sheet metal laser cutting, a specialized refrigerated dryer f
   },
   {
     id: 'news-5',
-    slug: 'trien-lam-quoc-te-ve-cong-nghe-laser-2024',
+    slug: 'trien-lam-quoc-te-ve-thiet-bi-cong-nghiep-2024',
     title: {
-      vi: 'KINKONAC Tham Gia Triển Lãm Quốc Tế Về Công Nghệ Laser 2024',
-      en: 'KINKONAC Participates in the 2024 International Laser Technology Exhibition',
-      zh: 'KINKONAC 亮相 2024 国际激光技术装备展'
+      vi: 'KINKONAC Tham Gia Triển Lãm Quốc Tế Về Thiết Bị Công Nghiệp 2024',
+      en: 'KINKONAC Participates in the 2024 International Industrial Equipment Exhibition',
+      zh: 'KINKONAC 亮相 2024 国际工业技术装备展'
     },
     summary: {
       vi: 'Cập nhật những hình ảnh và công nghệ khí nén đột phá mà KINKONAC đã trình diễn tại triển lãm công nghiệp quốc tế vừa qua.',
@@ -251,23 +251,23 @@ If you do standard sheet metal laser cutting, a specialized refrigerated dryer f
       vi: `
 Tại triển lãm Quốc tế về Công nghệ và Thiết bị gia công kim loại diễn ra vào tháng 3/2024, gian hàng của KINKONAC đã thu hút hơn 5000 lượt khách tham quan.
 
-Chúng tôi đã trình diễn trực tiếp hệ thống máy nén khí áp suất cao (1.6 Mpa) phục vụ cho máy cắt laser fiber 20kW. Khả năng cung cấp luồng khí ổn định, không ngậm nước, ngậm dầu của máy đã nhận được sự đánh giá rất cao từ các chuyên gia trong ngành.
+Chúng tôi đã trình diễn trực tiếp hệ thống máy nén khí áp suất cao (1.6 Mpa) phục vụ cho nhà máy chế tạo. Khả năng cung cấp luồng khí ổn định, không ngậm nước, ngậm dầu của máy đã nhận được sự đánh giá rất cao từ các chuyên gia trong ngành.
 
 Đây là minh chứng cho cam kết không ngừng nâng cao chất lượng sản phẩm của KINKONAC nhằm hỗ trợ tốt nhất cho các doanh nghiệp sản xuất tại Việt Nam.
       `,
       en: `
 At the International Exhibition on Metalworking Technology and Equipment held in March 2024, the KINKONAC booth attracted more than 5,000 visitors.
 
-We live-demonstrated a high-pressure air compressor system (1.6 Mpa) serving a 20kW fiber laser cutting machine. The ability to provide a stable, water-free, and oil-free airflow received high praise from industry experts.
+We live-demonstrated a high-pressure air compressor system (1.6 Mpa) serving manufacturing plants. The ability to provide a stable, water-free, and oil-free airflow received high praise from industry experts.
 
 This is a testament to KINKONAC's commitment to continuously improving product quality to best support manufacturing businesses in Vietnam.
       `,
       zh: `
 2024年3月，在国际金属加工技术装备展览会上，KINKONAC 展位累计接待超过 5000 名专业观众。
 
-展会现场，我们实机演示了为 20kW 光纤激光切割机配套的 1.6 MPa 高压气源系统。设备出气稳定、无水无油的卓越表现，获得了众多行业专家和终端用户的一致好评。
+展会现场，我们实机演示了为工业制造配套的 1.6 MPa 高压气源系统。设备出气稳定、无水无油的卓越表现，获得了众多行业专家和终端用户的一致好评。
 
-这也再次印证了 KINKONAC 始终坚持的产品理念：以过硬品质服务制造业客户，做激光行业最值得信赖的气源合作伙伴。
+这也再次印证了 KINKONAC 始终坚持的产品理念：以过硬品质服务制造业客户，做工业领域最值得信赖的气源合作伙伴。
       `
     },
     category: {

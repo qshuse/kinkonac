@@ -6,7 +6,7 @@ export const categories: Category[] = [
     name: {
       vi: 'Máy Nén Khí Chuyên Dụng',
       en: 'Specialized Air Compressors',
-      zh: '激光专用空压机',
+      zh: '工业专用空压机',
     },
     description: {
       vi: 'Các dòng máy nén khí trục vít làm mát bằng nước King Kong',
